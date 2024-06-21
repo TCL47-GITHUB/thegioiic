@@ -92,7 +92,7 @@ document.body.addEventListener("click", function(e) {
         overlay.style.display = 'flex';
 
         // Danh sách icon mới
-        var newIcons = ['icon-tgic-home-1','icon-tgic-home-1-solid','icon-tgic-filter', 'icon-tgic-pcb-instant', 'icon-tgic-pcb-assembly', 'icon-tgic-pcb-smd-stencil','icon-tgic-checked-circle', 'icon-tgic-delivery-done', 'icon-tgic-task-list', 'icon-tgic-pending-task'];
+        var newIcons = ['icon-tgic-world','icon-tgic-home-1','icon-tgic-home-1-solid','icon-tgic-filter', 'icon-tgic-pcb-instant', 'icon-tgic-pcb-assembly', 'icon-tgic-pcb-smd-stencil','icon-tgic-checked-circle', 'icon-tgic-delivery-done', 'icon-tgic-task-list', 'icon-tgic-pending-task'];
 
         // Hiển thị icon mới trong modal
         var newIconContainer = document.getElementById('newIconContainer');
