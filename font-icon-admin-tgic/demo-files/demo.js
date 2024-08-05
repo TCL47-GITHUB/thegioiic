@@ -133,18 +133,18 @@ function copyIcon() {
 function openModal() {
   var overlay = document.getElementById("overlay");
   overlay.style.display = "flex";
-
+  let abc = 'adm';
   // Danh sách icon mới
   var newIcons = [
-    "share-link",
-    "solid-share-link",
-    "list-link",
-    "solid-list-link",
-    "file-import",
-    "file-export",
-    "warehouse",
-    "solid-warehouse",
-    "blog"
+    `${abc}-share-link`,
+    `${abc}-solid-share-link`,
+    `${abc}-list-link`,
+    `${abc}-solid-list-link`,
+    `${abc}-file-import`,
+    `${abc}-file-export`,
+    `${abc}-warehouse`,
+    `${abc}-solid-warehouse`,
+    `${abc}-blog`
   ];
 
   // Hiển thị icon mới trong modal
