@@ -71,12 +71,13 @@ document.addEventListener("click", function (event) {
   }
 });
 
+var prefix = "ad-tgic ";
+
 function copyIconName1(iconName) {
-  var prefix = "ad-tgic ";
 
   // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
   var tempInput = document.createElement("input");
-  tempInput.value = '<i class="' + prefix + iconName + '"></i>';
+  tempInput.value = '<i class="' + iconName + '"></i>';
   document.body.appendChild(tempInput);
   tempInput.select();
   document.execCommand("copy");
@@ -87,7 +88,7 @@ function copyIconName1(iconName) {
   //   toastContainer.innerHTML =
   //     "Đã copy: " + '<i class="' + prefix + iconName + '"></i>';
   toastContainer.innerText =
-    "Đã copy: " + '<i class="' + prefix + iconName + '"></i>';
+    "Đã copy: " + '<i class="' + iconName + '"></i>';
   toastContainer.classList.add("show");
 
   setTimeout(function () {
@@ -96,7 +97,6 @@ function copyIconName1(iconName) {
 }
 
 function copyIconName2(iconName) {
-  var prefix = "ad-tgic ";
 
   // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
   var tempInput = document.createElement("input");
@@ -110,7 +110,7 @@ function copyIconName2(iconName) {
   var toastContainer = document.getElementById("toastContainer");
   // toastContainer.innerHTML =
   //   "Đã copy: " + '<i class="' + prefix + iconName + '"></i>';
-  toastContainer.innerText = "Đã copy: " + prefix + iconName;
+  toastContainer.innerText = "Đã copy: " + iconName;
   toastContainer.classList.add("show");
 
   setTimeout(function () {
@@ -131,18 +131,18 @@ function copyIcon() {
 function openModal() {
   var overlay = document.getElementById("overlay");
   overlay.style.display = "flex";
-  let abc = "adm";
+  let abc = "adm-";
   // Danh sách icon mới
   var newIcons = [
-    `${abc}-share-link`,
-    `${abc}-solid-share-link`,
-    `${abc}-list-link`,
-    `${abc}-solid-list-link`,
-    `${abc}-file-import`,
-    `${abc}-file-export`,
-    `${abc}-warehouse`,
-    `${abc}-solid-warehouse`,
-    `${abc}-blog`,
+    `${abc}share-link`,
+    `${abc}solid-share-link`,
+    `${abc}list-link`,
+    `${abc}solid-list-link`,
+    `${abc}file-import`,
+    `${abc}file-export`,
+    `${abc}warehouse`,
+    `${abc}solid-warehouse`,
+    `${abc}blog`,
   ];
 
   // Hiển thị icon mới trong modal
@@ -153,11 +153,11 @@ function openModal() {
     var iconElement = document.createElement("div");
     iconElement.className = "new-icon";
     iconElement.innerHTML =
-      '<i class="ad-tgic ' + iconClass + '"></i>' + "<p>" + iconClass + "</p>";
+      '<i class="ad-tgic ' + iconClass + '"></i>' + "<p>" + prefix + iconClass + "</p>";
     if (copyIcon() == 1) {
-      iconElement.setAttribute("onclick", 'copyIconName1("' + iconClass + '")');
+      iconElement.setAttribute("onclick", 'copyIconName1("' + prefix + iconClass + '")');
     } else if (copyIcon() == 2) {
-      iconElement.setAttribute("onclick", 'copyIconName2("' + iconClass + '")');
+      iconElement.setAttribute("onclick", 'copyIconName2("' + prefix + iconClass + '")');
     }
     newIconContainer.appendChild(iconElement);
   });
