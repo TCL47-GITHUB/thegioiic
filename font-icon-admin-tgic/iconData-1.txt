@@ -1,4 +1,5 @@
 const iconData = [
+{ code: "ad-tgic adm-upload", content: "\e9b2" },
 { code: "ad-tgic adm-area", content: "\e900" },
 { code: "ad-tgic adm-solid-area", content: "\e901" },
 { code: "ad-tgic adm-bell", content: "\e902" },
