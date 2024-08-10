@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'font-icon-admin-tgic';
-  src:  url('fonts/font-icon-admin-tgic.eot?qbh8r1');
-  src:  url('fonts/font-icon-admin-tgic.eot?qbh8r1#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-admin-tgic.ttf?qbh8r1') format('truetype'),
-    url('fonts/font-icon-admin-tgic.woff?qbh8r1') format('woff'),
-    url('fonts/font-icon-admin-tgic.svg?qbh8r1#font-icon-admin-tgic') format('svg');
+  src:  url('fonts/font-icon-admin-tgic.eot?hg5ddn');
+  src:  url('fonts/font-icon-admin-tgic.eot?hg5ddn#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-admin-tgic.ttf?hg5ddn') format('truetype'),
+    url('fonts/font-icon-admin-tgic.woff?hg5ddn') format('woff'),
+    url('fonts/font-icon-admin-tgic.svg?hg5ddn#font-icon-admin-tgic') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-.ad-tgic {
+i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'font-icon-admin-tgic' !important;
   speak: never;
@@ -25,6 +25,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.adm-x:before {
+  content: "\e998";
+}
+.adm-check:before {
+  content: "\e9ad";
+}
+.adm-check-bold:before {
+  content: "\e9b3";
+}
+.adm-solid-check-circle:before {
+  content: "\e9b4";
+}
+.adm-solid-check-square:before {
+  content: "\e9b5";
+}
+.adm-solid-plus-square:before {
+  content: "\e9b6";
+}
+.adm-plus-square:before {
+  content: "\e9b7";
+}
+.adm-plus:before {
+  content: "\e99d";
+}
+.adm-plus-medical:before {
+  content: "\e99e";
+}
 .adm-upload:before {
   content: "\e9b2";
 }
@@ -487,9 +514,6 @@
 .adm-solid-wrench:before {
   content: "\e997";
 }
-.adm-x:before {
-  content: "\e998";
-}
 .adm-x-circle:before {
   content: "\e999";
 }
@@ -501,12 +525,6 @@
 }
 .adm-unity:before {
   content: "\e99c";
-}
-.adm-plus:before {
-  content: "\e99d";
-}
-.adm-plus-medical:before {
-  content: "\e99e";
 }
 .adm-solid-bar-chart-alt-2:before {
   content: "\e99f";
@@ -549,9 +567,6 @@
 }
 .adm-solid-hourglass:before {
   content: "\e9ac";
-}
-.adm-check:before {
-  content: "\e9ad";
 }
 .adm-solid-product-hunt:before {
   content: "\e9ae";

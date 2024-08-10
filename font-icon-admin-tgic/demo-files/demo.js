@@ -100,7 +100,7 @@ function copyIconName2(iconName) {
 
   // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
   var tempInput = document.createElement("input");
-  tempInput.value = prefix + iconName;
+  tempInput.value = iconName;
   document.body.appendChild(tempInput);
   tempInput.select();
   document.execCommand("copy");
@@ -190,7 +190,7 @@ const iconCount = document.getElementById("icon-count");
 // Function to fetch and display the file content
 async function displayFileContent() {
   try {
-    const response = await fetch("iconData.txt");
+    const response = await fetch("iconData-1.txt");
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
