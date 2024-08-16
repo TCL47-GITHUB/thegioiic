@@ -31,14 +31,6 @@ document.body.addEventListener("click", function (e) {
   testText.addEventListener("change", updateTest, false);
   updateSize();
 })();
-// Total icon
-// function countTotalIcon() {
-//   var iconElements = document.querySelectorAll(".mls");
-//   var totalCount = iconElements.length;
-
-//   var totalIconCountElement = document.getElementById("totalIconCount");
-//   totalIconCountElement.innerHTML = "(Icons: " + totalCount + ")";
-// }
 
 //Live Search
 function searchIconByName(iconName) {
@@ -71,7 +63,6 @@ document.addEventListener("click", function (event) {
   }
 });
 
-var prefix = "ad-tgic ";
 
 function copyIconName1(iconName) {
 
@@ -131,19 +122,8 @@ function copyIcon() {
 function openModal() {
   var overlay = document.getElementById("overlay");
   overlay.style.display = "flex";
-  let abc = "adm-";
-  // Danh sách icon mới
-  var newIcons = [
-    `${abc}share-link`,
-    `${abc}solid-share-link`,
-    `${abc}list-link`,
-    `${abc}solid-list-link`,
-    `${abc}file-import`,
-    `${abc}file-export`,
-    `${abc}warehouse`,
-    `${abc}solid-warehouse`,
-    `${abc}blog`,
-  ];
+
+
 
   // Hiển thị icon mới trong modal
   var newIconContainer = document.getElementById("newIconContainer");
@@ -153,7 +133,7 @@ function openModal() {
     var iconElement = document.createElement("div");
     iconElement.className = "new-icon";
     iconElement.innerHTML =
-      '<i class="ad-tgic ' + iconClass + '"></i>' + "<p>" + prefix + iconClass + "</p>";
+      '<i class="' + prefix + ' ' + iconClass + '"></i>' + "<p>" + prefix + iconClass + "</p>";
     if (copyIcon() == 1) {
       iconElement.setAttribute("onclick", 'copyIconName1("' + prefix + iconClass + '")');
     } else if (copyIcon() == 2) {
@@ -198,7 +178,8 @@ async function displayFileContent() {
     fileContent.textContent = text;
 
     // Count the occurrences of "ad-tgic"
-    const iconCountMatch = text.match(/ad-tgic/g);
+    // const iconCountMatch = text.match(/ad-mm/g);
+    const iconCountMatch = text.match(new RegExp(`${prefix}`, 'g'));
     const count = iconCountMatch ? iconCountMatch.length : 0;
     iconCount.textContent = ` (${count})`;
   } catch (error) {
@@ -284,6 +265,9 @@ fetch("iconData-1.txt")
 
       container.appendChild(glyphDiv);
     });
+    //Hiển thị tên font
+    const fontNameDIV = document.getElementById("fontName");
+    fontNameDIV.textContent = `${fontName}`;
     // Hiển thị số lượng icon
     const iconCountDiv = document.getElementById("totalIconCount");
     iconCountDiv.textContent = `Icon: ${iconData.length}`;

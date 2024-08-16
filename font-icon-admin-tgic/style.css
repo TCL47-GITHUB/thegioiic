@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-admin-tgic';
-  src:  url('fonts/font-icon-admin-tgic.eot?hg5ddn');
-  src:  url('fonts/font-icon-admin-tgic.eot?hg5ddn#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-admin-tgic.ttf?hg5ddn') format('truetype'),
-    url('fonts/font-icon-admin-tgic.woff?hg5ddn') format('woff'),
-    url('fonts/font-icon-admin-tgic.svg?hg5ddn#font-icon-admin-tgic') format('svg');
+  src:  url('fonts/font-icon-admin-tgic.eot?bx6c6j');
+  src:  url('fonts/font-icon-admin-tgic.eot?bx6c6j#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-admin-tgic.ttf?bx6c6j') format('truetype'),
+    url('fonts/font-icon-admin-tgic.woff?bx6c6j') format('woff'),
+    url('fonts/font-icon-admin-tgic.svg?bx6c6j#font-icon-admin-tgic') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.adm-camera:before {
+  content: "\e9b8";
+}
+.adm-solid-camera:before {
+  content: "\e9b9";
+}
 .adm-x:before {
   content: "\e998";
 }
