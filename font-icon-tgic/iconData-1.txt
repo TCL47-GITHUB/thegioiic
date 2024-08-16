@@ -104,7 +104,7 @@ const iconData = [
 { code: "tgic icon-solid-phone", content: "\a166" },
 { code: "tgic icon-sync", content: "\a167" },
 { code: "tgic icon-task-list", content: "\a168" },
-{ code: "tgic icon-tgic-search", content: "\a169" },
+{ code: "tgic icon-search", content: "\a169" },
 { code: "tgic icon-tiktok", content: "\a16a" },
 { code: "tgic icon-times", content: "\a16b" },
 { code: "tgic icon-times-bold", content: "\a16c" },
