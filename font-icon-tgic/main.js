@@ -1,15 +1,15 @@
 // Danh sách icon mới
 var fontName = "user-tgic";
 
-var prefix = null;
+var prefix = "tgic ";
 
 let abc = "icon-";
 // Danh sách icon mới
 var newIcons = [
-  `${abc}tgic-twitter-new`,
-  `${abc}tgic-filter`,
-  `${abc}tgic-pcb-assembly`,
-  `${abc}tgic-pcb-instant`,
-  `${abc}tgic-pending-task`,
-  `${abc}tgic-rohs`,
+  `${abc}dashboard`,
+  `${abc}dashboard-solid`,
+  `${abc}filter`,
+  `${abc}filter-solid`,
+  `${abc}bookmark-1`,
+  `${abc}bookmark-1-solid`,
 ];

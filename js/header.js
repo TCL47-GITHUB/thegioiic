@@ -101,15 +101,11 @@ class Header extends HTMLElement {
           <path d="M138.067 14.8735H138.037V14.8493C138.049 14.8545 138.06 14.8629 138.067 14.8735Z" fill="white"/>
         </svg></a>
       <div class="flex w-full text-nowrap">
-  <a href="https://tcl47-github.github.io/maumau-icon/set-1/demo.html" class="w-full text-sm rounded-r-none hover:scale-105 focus:outline-none flex justify-center px-2 py-1 rounded cursor-pointer hover:bg-sky-700 hover:text-sky-100 bg-sky-100 text-sky-700 border border-r-0 duration-200 ease-in-out border-sky-600 transition">
-  <div class="flex leading-5">Set 1</div>
-  </a>
-  <a href="https://tcl47-github.github.io/maumau-icon/set-2/demo.html" class="w-full text-sm hover:scale-105 focus:outline-none flex justify-center px-2 py-1 cursor-pointer hover:bg-sky-700 hover:text-sky-100 bg-sky-100 text-sky-700 border border-r-0 duration-200 ease-in-out border-sky-600 transition">
-  <div class="flex leading-5">Set 2</div>
-  </a>
-  
-  <a href="https://tcl47-github.github.io/maumau-icon/admin/demo.html" class="w-full text-sm hover:scale-105 focus:outline-none flex justify-center px-2 py-1 cursor-pointer hover:bg-sky-700 hover:text-sky-100 bg-sky-100 text-sky-700 border border-r-0 duration-200 ease-in-out border-sky-600 transition">
+  <a href="../font-icon-admin-tgic/demo.html" class="w-full text-sm rounded-r-none hover:scale-105 focus:outline-none flex justify-center px-2 py-1 rounded cursor-pointer hover:bg-sky-700 hover:text-sky-100 bg-sky-100 text-sky-700 border border-r-0 duration-200 ease-in-out border-sky-600 transition">
   <div class="flex leading-5">Admin</div>
+  </a>
+  <a href="../font-icon-tgic/demo.html" class="w-full text-sm hover:scale-105 focus:outline-none flex justify-center px-2 py-1 cursor-pointer hover:bg-sky-700 hover:text-sky-100 bg-sky-100 text-sky-700 border border-r-0 duration-200 ease-in-out border-sky-600 transition">
+  <div class="flex leading-5">User</div>
   </a>
   <button id="open-popup" class="text-sm w-full hover:scale-105 focus:outline-none flex justify-center px-2 py-1 cursor-pointer hover:bg-teal-700 hover:text-teal-100 bg-teal-100 text-teal-700 border border-r-0 duration-200 ease-in-out border-teal-600 transition">
   <div class="flex leading-5">Icon data</div>
