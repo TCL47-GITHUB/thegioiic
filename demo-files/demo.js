@@ -283,38 +283,38 @@ fetch("iconData-1.txt")
   .catch((error) => console.error("Error fetching iconData:", error));
 
 
-// window.addEventListener("keydown", function(e) {
+window.addEventListener("keydown", function(e) {
 
-// //   if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "C") || (e.ctrlKey && e.key === "u") || (e.ctrlKey && e.shiftKey && e.key === "I")) {
-// //     e.preventDefault();
-// // }   
-//   // F12        
-//   if (e.key === "F12") {
-//       e.preventDefault();
-//   }
+//   if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "C") || (e.ctrlKey && e.key === "u") || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+//     e.preventDefault();
+// }   
+  // F12        
+  if (e.key === "F12") {
+      e.preventDefault();
+  }
 
-//   // Ctrl + Shift + C
-//   if (e.ctrlKey && e.shiftKey && e.key === "C") {
-//       e.preventDefault();
-//   }
+  // Ctrl + Shift + C
+  if (e.ctrlKey && e.shiftKey && e.key === "C") {
+      e.preventDefault();
+  }
 
-//   // Ctrl + U
-//   if (e.ctrlKey && e.key === "u") {
-//       e.preventDefault();
-//   }
+  // Ctrl + U
+  if (e.ctrlKey && e.key === "u") {
+      e.preventDefault();
+  }
 
-//   // Ctrl + Shift + I
-//   if (e.ctrlKey && e.shiftKey && e.key === "I") {
-//       e.preventDefault();
-//   }
-// });
+  // Ctrl + Shift + I
+  if (e.ctrlKey && e.shiftKey && e.key === "I") {
+      e.preventDefault();
+  }
+});
 
-// // Chặn chuột phải (context menu)
-// window.addEventListener("contextmenu", function(e) {
-//   e.preventDefault();
-// });
+// Chặn chuột phải (context menu)
+window.addEventListener("contextmenu", function(e) {
+  e.preventDefault();
+});
 
-// // Thiết lập debugger
-// setInterval(function () {
-//   debugger;
-// }, 10);
+// Thiết lập debugger
+setInterval(function () {
+  debugger;
+}, 10);
