@@ -63,9 +63,7 @@ document.addEventListener("click", function (event) {
   }
 });
 
-
 function copyIconName1(iconName) {
-
   // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
   var tempInput = document.createElement("input");
   tempInput.value = '<i class="' + iconName + '"></i>';
@@ -78,8 +76,7 @@ function copyIconName1(iconName) {
   var toastContainer = document.getElementById("toastContainer");
   //   toastContainer.innerHTML =
   //     "Đã copy: " + '<i class="' + prefix + iconName + '"></i>';
-  toastContainer.innerText =
-    "Đã copy: " + '<i class="' + iconName + '"></i>';
+  toastContainer.innerText = "Đã copy: " + '<i class="' + iconName + '"></i>';
   toastContainer.classList.add("show");
 
   setTimeout(function () {
@@ -88,7 +85,6 @@ function copyIconName1(iconName) {
 }
 
 function copyIconName2(iconName) {
-
   // Tạo một thẻ input tạm thời để sao chép giá trị vào clipboard
   var tempInput = document.createElement("input");
   tempInput.value = iconName;
@@ -123,8 +119,6 @@ function openModal() {
   var overlay = document.getElementById("overlay");
   overlay.style.display = "flex";
 
-
-
   // Hiển thị icon mới trong modal
   var newIconContainer = document.getElementById("newIconContainer");
   newIconContainer.innerHTML = "";
@@ -133,11 +127,25 @@ function openModal() {
     var iconElement = document.createElement("div");
     iconElement.className = "new-icon";
     iconElement.innerHTML =
-      '<i class="' + prefix + ' ' + iconClass + '"></i>' + "<p>" + prefix + iconClass + "</p>";
+      '<i class="' +
+      prefix +
+      " " +
+      iconClass +
+      '"></i>' +
+      "<p>" +
+      prefix +
+      iconClass +
+      "</p>";
     if (copyIcon() == 1) {
-      iconElement.setAttribute("onclick", 'copyIconName1("' + prefix + iconClass + '")');
+      iconElement.setAttribute(
+        "onclick",
+        'copyIconName1("' + prefix + iconClass + '")'
+      );
     } else if (copyIcon() == 2) {
-      iconElement.setAttribute("onclick", 'copyIconName2("' + prefix + iconClass + '")');
+      iconElement.setAttribute(
+        "onclick",
+        'copyIconName2("' + prefix + iconClass + '")'
+      );
     }
     newIconContainer.appendChild(iconElement);
   });
@@ -179,7 +187,7 @@ async function displayFileContent() {
 
     // Count the occurrences of "ad-tgic"
     // const iconCountMatch = text.match(/ad-mm/g);
-    const iconCountMatch = text.match(new RegExp(`${prefix}`, 'g'));
+    const iconCountMatch = text.match(new RegExp(`${prefix}`, "g"));
     const count = iconCountMatch ? iconCountMatch.length : 0;
     iconCount.textContent = ` (${count})`;
   } catch (error) {
@@ -273,3 +281,40 @@ fetch("iconData-1.txt")
     iconCountDiv.textContent = `Icon: ${iconData.length}`;
   })
   .catch((error) => console.error("Error fetching iconData:", error));
+
+
+// window.addEventListener("keydown", function(e) {
+
+// //   if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "C") || (e.ctrlKey && e.key === "u") || (e.ctrlKey && e.shiftKey && e.key === "I")) {
+// //     e.preventDefault();
+// // }   
+//   // F12        
+//   if (e.key === "F12") {
+//       e.preventDefault();
+//   }
+
+//   // Ctrl + Shift + C
+//   if (e.ctrlKey && e.shiftKey && e.key === "C") {
+//       e.preventDefault();
+//   }
+
+//   // Ctrl + U
+//   if (e.ctrlKey && e.key === "u") {
+//       e.preventDefault();
+//   }
+
+//   // Ctrl + Shift + I
+//   if (e.ctrlKey && e.shiftKey && e.key === "I") {
+//       e.preventDefault();
+//   }
+// });
+
+// // Chặn chuột phải (context menu)
+// window.addEventListener("contextmenu", function(e) {
+//   e.preventDefault();
+// });
+
+// // Thiết lập debugger
+// setInterval(function () {
+//   debugger;
+// }, 10);
