@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-admin-tgic';
-  src:  url('fonts/font-icon-admin-tgic.eot?bx6c6j');
-  src:  url('fonts/font-icon-admin-tgic.eot?bx6c6j#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-admin-tgic.ttf?bx6c6j') format('truetype'),
-    url('fonts/font-icon-admin-tgic.woff?bx6c6j') format('woff'),
-    url('fonts/font-icon-admin-tgic.svg?bx6c6j#font-icon-admin-tgic') format('svg');
+  src:  url('fonts/font-icon-admin-tgic.eot?b9jffz');
+  src:  url('fonts/font-icon-admin-tgic.eot?b9jffz#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-admin-tgic.ttf?b9jffz') format('truetype'),
+    url('fonts/font-icon-admin-tgic.woff?b9jffz') format('woff'),
+    url('fonts/font-icon-admin-tgic.svg?b9jffz#font-icon-admin-tgic') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.adm-logo:before {
+  content: "\e9ba";
+}
 .adm-camera:before {
   content: "\e9b8";
 }
