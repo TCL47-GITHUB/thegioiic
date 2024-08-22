@@ -1,5 +1,9 @@
 const iconData = [
+{ code: "tgic icon-edit-1" },
+{ code: "tgic icon-edit-1-solid" },
 { code: "tgic icon-logo" },
+{ code: "tgic icon-user-2" },
+{ code: "tgic icon-user-2-solid" },
 { code: "tgic icon-add-cart" },
 { code: "tgic icon-add-cart-solid" },
 { code: "tgic icon-alert-triangle" },
@@ -116,7 +120,7 @@ const iconData = [
 { code: "tgic icon-twitter-new" },
 { code: "tgic icon-twitter-new-solid" },
 { code: "tgic icon-twitter-solid" },
-{ code: "tgic icon-user" },
+{ code: "tgic icon-user-solid" },
 { code: "tgic icon-user-1" },
 { code: "tgic icon-user-1-solid" },
 { code: "tgic icon-user-plus" },
