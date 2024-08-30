@@ -6,7 +6,10 @@ var prefix = "tgic ";
 let abc = "icon-";
 // Danh sách icon mới
 var newIcons = [
-  `${abc}logo`,
+  `${abc}logo-tgic`,
+  `${abc}logo-linhkienx`,
+  `${abc}logo-linhkienx-sm`,
+  `${abc}skype-solid`,
   `${abc}dashboard`,
   `${abc}dashboard-solid`,
   `${abc}filter`,

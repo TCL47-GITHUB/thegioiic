@@ -399,12 +399,23 @@ p {
         /* Style for the icon container */
         .icon-container {
 			display: grid;
-			grid-template-columns: repeat(3, minmax(0, 1fr));
+			grid-template-columns: repeat(2, minmax(0, 1fr));
 			gap: 1rem;
-			max-width: 600px;
+			max-width: 680px;
 			max-height: 400px;
 			overflow-y: scroll;
 			padding: 1rem;
+		}
+
+		@media only screen and (max-width: 500px) {
+			.modal{
+				width: 100%;
+				margin: 0 1rem;
+			}
+			.icon-container  {
+				grid-template-columns: repeat(1, minmax(0, 1fr));
+				max-width: 100%;
+			}
 		}
 
         /* Style for individual icon */
@@ -412,7 +423,7 @@ p {
 			color: #454545;
 			background: white;
 			padding: 1rem;
-			font-size: 3.5rem;
+			font-size: 2.5rem;
 			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 			border-radius: 8px;
 			position:relative;

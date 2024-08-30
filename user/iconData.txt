@@ -1,7 +1,10 @@
 const iconData = [
+{ code: "tgic icon-logo-linhkienx" },
+{ code: "tgic icon-logo-linhkienx-sm" },
+{ code: "tgic icon-logo-tgic" },
+{ code: "tgic icon-skype-solid" },
 { code: "tgic icon-edit-1" },
 { code: "tgic icon-edit-1-solid" },
-{ code: "tgic icon-logo" },
 { code: "tgic icon-user-2" },
 { code: "tgic icon-user-2-solid" },
 { code: "tgic icon-add-cart" },
