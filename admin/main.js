@@ -6,6 +6,10 @@ var prefix = "ad-tgic ";
 let abc = "adm-";
 // Danh sách icon mới
 var newIcons = [
+  `${abc}group-users`,
+  `${abc}solid-group-users`,
+  `${abc}heart`,
+  `${abc}solid-heart`,
   `${abc}loading`,
   `${abc}logo-linhkienx`,
   `${abc}logo-linhkienx-sm`,
