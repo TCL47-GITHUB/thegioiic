@@ -1,4 +1,8 @@
 const iconData = [
+{ code: "ad-tgic adm-more-h" },
+{ code: "ad-tgic adm-more-v" },
+{ code: "ad-tgic adm-solid-more-h" },
+{ code: "ad-tgic adm-solid-more-v" },
 { code: "ad-tgic adm-group-users" },
 { code: "ad-tgic adm-solid-group-users" },
 { code: "ad-tgic adm-heart" },

@@ -1,4 +1,8 @@
 const iconData = [
+{ code: "ad-tgic adm-more-h", content: "\e90a" },
+{ code: "ad-tgic adm-more-v", content: "\e90b" },
+{ code: "ad-tgic adm-solid-more-h", content: "\e90c" },
+{ code: "ad-tgic adm-solid-more-v", content: "\e90d" },
 { code: "ad-tgic adm-group-users", content: "\e901" },
 { code: "ad-tgic adm-solid-group-users", content: "\e902" },
 { code: "ad-tgic adm-heart", content: "\e903" },
