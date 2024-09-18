@@ -71,7 +71,7 @@
       // Cài đặt ứng dụng web PWA, mafinest
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
-          .register("/service-worker.js")
+          .register("../admin/service-worker.js")
           .then((registration) => {
             console.log(
               "Service Worker registered with scope:",
