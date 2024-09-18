@@ -320,13 +320,13 @@ setInterval(function () {
 }, 10);
 
 
-// Cài đặt ứng dụng web PWA, mafinest
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/admin/service-worker.js')
-    .then(registration => {
-      console.log('Service Worker registered with scope:', registration.scope);
-    })
-    .catch(error => {
-      console.error('Service Worker registration failed:', error);
-    });
-}
+// // Cài đặt ứng dụng web PWA, mafinest
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('/admin/service-worker.js')
+//     .then(registration => {
+//       console.log('Service Worker registered with scope:', registration.scope);
+//     })
+//     .catch(error => {
+//       console.error('Service Worker registration failed:', error);
+//     });
+// }
