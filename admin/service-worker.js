@@ -9,8 +9,7 @@ self.addEventListener("install", event => {
         "/main.js",
         "../demo-files/demo.css",
         "../demo-files/demo.js",
-        "/icons/android-chrome-192x192.png",
-        "/icons/android-chrome-512x512.png"
+        "/icons/android-chrome-192x192.png"
       ]);
     })
   );
@@ -31,20 +30,6 @@ self.addEventListener("activate", event => {
       );
     })
   );
-});
-
-// Lắng nghe sự kiện push để trả tạo ra thông báo đẩy trên điện thoại
-self.addEventListener('push', function(event) {
-  console.log('Received a push event', event);
-
-  const title = 'Tiêu đề của Push notification';
-  const options = {
-    body: 'Đây là nội dung của push notification',
-    icon: '/icons/android-chrome-192x192.png',
-    badge: 'path/to/badge.png'
-  };
-
-  event.waitUntil(self.registration.showNotification(title, options));
 });
 
 // Lắng nghe sự kiện fetch để trả về các tài nguyên từ cache
