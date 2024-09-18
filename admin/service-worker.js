@@ -4,12 +4,12 @@ self.addEventListener("install", event => {
     caches.open("v1").then(cache => {
       return cache.addAll([
         "/",
-        "/admin/demo.html",
-        "/admin/style.css",
-        "/admin/main.js",
+        "/thegioiic/admin/demo.html",
+        "/thegioiic/admin/style.css",
+        "/thegioiic/admin/main.js",
         "../demo-files/demo.css",
         "../demo-files/demo.js",
-        "/admin/icons/android-chrome-192x192.png"
+        "/thegioiic/admin/icons/android-chrome-192x192.png"
       ]);
     })
   );
