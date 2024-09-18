@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="application-name" content="Linh Kiện X">
     <link rel="stylesheet" href="../demo-files/demo.css" />
     <link
       rel="stylesheet"
@@ -30,17 +29,39 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../js/header.js"></script>
+
+    <script>
+      // Cài đặt ứng dụng web PWA, mafinest
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("../admin/service-worker.js")
+          .then((registration) => {
+            console.log(
+              "Service Worker registered with scope:",
+              registration.scope
+            );
+          })
+          .catch((error) => {
+            console.error("Service Worker registration failed:", error);
+          });
+      }
+    </script>
   </head>
 
   <body>
-    <button style="
-    position: fixed;
-    bottom: 40px;
-    right: 30px;
-    background: aquamarine;
-    padding: 0.3rem;
-    z-index: 99;
-" onclick="addToHomeScreen()">Thêm vào màn hình chính</button>
+    <button
+      style="
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        background: aquamarine;
+        padding: 0.3rem;
+        z-index: 99;
+      "
+      onclick="addToHomeScreen()"
+    >
+      Thêm vào màn hình chính
+    </button>
     <!-- header -->
     <my-header></my-header>
     <div id="icon-container" class="clearfix mhl ptl"></div>
@@ -77,33 +98,20 @@
     <script src="../demo-files/demo.js"></script>
 
     <script>
-      // Cài đặt ứng dụng web PWA, mafinest
-      if ("serviceWorker" in navigator) {
-        navigator.serviceWorker
-          .register("../admin/service-worker.js")
-          .then((registration) => {
-            console.log(
-              "Service Worker registered with scope:",
-              registration.scope
-            );
-          })
-          .catch((error) => {
-            console.error("Service Worker registration failed:", error);
+      function addToHomeScreen() {
+        var a2hsPrompt = document.getElementById("a2hs-prompt");
+        // Hiển thị thông báo
+        a2hsPrompt.style.display = "block";
+        // Đăng ký sự kiện nhấp vào nút "Thêm"
+        document
+          .getElementById("a2hs-button")
+          .addEventListener("click", function () {
+            // Thêm ứng dụng vào màn hình chính
+            addToHomeScreen.prompt.prompt();
+            // Ẩn thông báo
+            a2hsPrompt.style.display = "none";
           });
       }
-
-      function addToHomeScreen() {
-  var a2hsPrompt = document.getElementById('a2hs-prompt');
-  // Hiển thị thông báo
-  a2hsPrompt.style.display = 'block';
-  // Đăng ký sự kiện nhấp vào nút "Thêm"
-  document.getElementById('a2hs-button').addEventListener('click', function() {
-    // Thêm ứng dụng vào màn hình chính
-    addToHomeScreen.prompt.prompt();
-    // Ẩn thông báo
-    a2hsPrompt.style.display = 'none';
-  });
-}
     </script>
   </body>
 </html>
