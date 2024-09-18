@@ -4,12 +4,12 @@ self.addEventListener("install", event => {
     caches.open("v1").then(cache => {
       return cache.addAll([
         "/",
-        "/demo.html",
-        "/style.css",
-        "/main.js",
+        "/admin/demo.html",
+        "/admin/style.css",
+        "/admin/main.js",
         "../demo-files/demo.css",
         "../demo-files/demo.js",
-        "/icons/android-chrome-192x192.png"
+        "/admin/icons/android-chrome-192x192.png"
       ]);
     })
   );
