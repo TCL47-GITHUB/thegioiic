@@ -2,7 +2,7 @@
   "name": "Icons Linh Kiện X",
   "short_name": "Icons LK-X",
   "description": "My Progressive Web App",
-  "start_url": "../admin.html",
+  "start_url": "../../admin.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
