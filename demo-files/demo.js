@@ -231,7 +231,7 @@ window.addEventListener("click", function (event) {
   }
 });
 
-/*
+
 window.addEventListener("keydown", function(e) {
 
 //   if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "C") || (e.ctrlKey && e.key === "u") || (e.ctrlKey && e.shiftKey && e.key === "I")) {
@@ -267,5 +267,3 @@ window.addEventListener("contextmenu", function(e) {
 setInterval(function () {
   debugger;
 }, 10);
-
-*/
