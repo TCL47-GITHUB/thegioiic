@@ -16,10 +16,10 @@ class Header extends HTMLElement {
         <i class="ad-tgic adm-logo icon-logo text-[#c7faff] text-5xl"></i>
       </a>
       <div class="flex w-full text-nowrap">
-  <a href="../admin/demo.html" class="w-full text-sm rounded-r-none hover:scale-105 focus:outline-none flex justify-center px-2 py-1 rounded cursor-pointer hover:bg-sky-700 hover:text-sky-100 bg-sky-100 text-sky-700 border border-r-0 duration-200 ease-in-out border-sky-600 transition">
+  <a href="/admin.html" class="w-full text-sm rounded-r-none hover:scale-105 focus:outline-none flex justify-center px-2 py-1 rounded cursor-pointer hover:bg-sky-700 hover:text-sky-100 bg-sky-100 text-sky-700 border border-r-0 duration-200 ease-in-out border-sky-600 transition">
   <div class="flex leading-5">Admin</div>
   </a>
-  <a href="../user/demo.html" class="w-full text-sm hover:scale-105 focus:outline-none flex justify-center px-2 py-1 cursor-pointer hover:bg-sky-700 hover:text-sky-100 bg-sky-100 text-sky-700 border border-r-0 duration-200 ease-in-out border-sky-600 transition">
+  <a href="/user.html" class="w-full text-sm hover:scale-105 focus:outline-none flex justify-center px-2 py-1 cursor-pointer hover:bg-sky-700 hover:text-sky-100 bg-sky-100 text-sky-700 border border-r-0 duration-200 ease-in-out border-sky-600 transition">
   <div class="flex leading-5">User</div>
   </a>
   <button id="open-popup" class="text-sm w-full hover:scale-105 focus:outline-none flex justify-center px-2 py-1 cursor-pointer hover:bg-teal-700 hover:text-teal-100 bg-teal-100 text-teal-700 border border-r-0 duration-200 ease-in-out border-teal-600 transition">
