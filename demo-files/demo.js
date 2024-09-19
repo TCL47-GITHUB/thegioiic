@@ -282,7 +282,7 @@ fetch("iconData-1.txt")
   })
   .catch((error) => console.error("Error fetching iconData:", error));
 
-/*
+
 window.addEventListener("keydown", function(e) {
 
 //   if (e.key === "F12" || (e.ctrlKey && e.shiftKey && e.key === "C") || (e.ctrlKey && e.key === "u") || (e.ctrlKey && e.shiftKey && e.key === "I")) {
@@ -319,4 +319,4 @@ setInterval(function () {
   debugger;
 }, 10);
 
-*/
+
