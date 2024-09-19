@@ -521,8 +521,8 @@ p {
 
 #installBtn {
   position: fixed;
-  right: 40px;
-  bottom: 40px;
+  right: 15px;
+  bottom: 20px;
   z-index: 10;
   background: #dbdbdb;
   padding: 0.5rem;
