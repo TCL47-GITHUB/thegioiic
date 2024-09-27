@@ -6,6 +6,8 @@ var prefix = "ad-tgic ";
 let abc = "adm-";
 // Danh sách icon mới
 var newIcons = [
+  `${abc}download`,
+  `${abc}fire`,
   `${abc}more-h`,
   `${abc}more-v`,
   `${abc}solid-more-h`,
