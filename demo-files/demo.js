@@ -265,6 +265,6 @@ window.addEventListener("contextmenu", function(e) {
 });
 
 // Thiết lập debugger
-setInterval(function () {
-  debugger;
-}, 10);
+// setInterval(function () {
+//   debugger;
+// }, 10);
