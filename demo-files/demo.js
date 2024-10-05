@@ -175,6 +175,7 @@ const fileContent = document.getElementById("file-content");
 const copyBtn = document.getElementById("copy-btn");
 const iconCount = document.getElementById("icon-count");
 
+/*
 // Function to fetch and display the file content
 async function displayFileContent() {
   try {
@@ -194,6 +195,7 @@ async function displayFileContent() {
     fileContent.textContent = `Error: ${error.message}`;
   }
 }
+*/
 
 // Function to open the popup
 function openPopup() {

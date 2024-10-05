@@ -6,6 +6,9 @@ var prefix = "tgic ";
 let abc = "icon-";
 // Danh sách icon mới
 var newIcons = [
+  `${abc}exit-full-screen`,
+  `${abc}full-screen`,
+  `${abc}fire`,
   `${abc}solid-delivery-done`,
   `${abc}solid-key`,
   `${abc}solid-bookmark`,
@@ -75,4 +78,25 @@ fetch("user/iconData-1.txt")
     iconCountDiv.textContent = `Icon: ${iconData.length}`;
   })
   .catch((error) => console.error("Error fetching iconData:", error));
+
+   // Function to fetch and display the file content Icon data
+async function displayFileContent() {
+  try {
+    const response = await fetch("user/iconData-1.txt");
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const text = await response.text();
+    fileContent.textContent = text;
+
+    // Count the occurrences of "ad-tgic"
+    // const iconCountMatch = text.match(/ad-mm/g);
+    const iconCountMatch = text.match(new RegExp(`${prefix}`, 'g'));
+    const count = iconCountMatch ? iconCountMatch.length : 0;
+    iconCount.textContent = ` (${count})`;
+  } catch (error) {
+    fileContent.textContent = `Error: ${error.message}`;
+  }
+}
+
 

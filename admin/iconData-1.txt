@@ -1,6 +1,8 @@
 const iconData = [
+{ code: "ad-tgic adm-exit-full-screen", content: "\e910" },
+{ code: "ad-tgic adm-full-screen", content: "\e911" },
 { code: "ad-tgic adm-download", content: "\e90e" },
-{ code: "ad-tgic adm-fire", content: "\e90f" },    
+{ code: "ad-tgic adm-fire", content: "\e90f" },
 { code: "ad-tgic adm-more-h", content: "\e90a" },
 { code: "ad-tgic adm-more-v", content: "\e90b" },
 { code: "ad-tgic adm-solid-more-h", content: "\e90c" },

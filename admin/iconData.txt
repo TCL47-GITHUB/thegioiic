@@ -1,4 +1,6 @@
 const iconData = [
+{ code: "ad-tgic adm-exit-full-screen"},
+{ code: "ad-tgic adm-full-screen"}, 
 { code: "ad-tgic adm-download"},
 { code: "ad-tgic adm-fire"}, 
 { code: "ad-tgic adm-more-h" },

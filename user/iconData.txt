@@ -1,4 +1,7 @@
 const iconData = [
+{ code: "tgic icon-exit-full-screen" },
+{ code: "tgic icon-full-screen" },
+{ code: "tgic icon-fire" },
 { code: "tgic icon-microchip-1" },
 { code: "tgic icon-solid-microchip-1" },
 { code: "tgic icon-microchip" },
