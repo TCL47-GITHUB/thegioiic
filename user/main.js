@@ -6,6 +6,8 @@ var prefix = "tgic ";
 let abc = "icon-";
 // Danh sách icon mới
 var newIcons = [
+  `${abc}add-cart-1`,
+  `${abc}add-cart-2`,
   `${abc}exit-full-screen`,
   `${abc}full-screen`,
   `${abc}fire`,

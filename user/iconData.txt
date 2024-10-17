@@ -1,4 +1,6 @@
 const iconData = [
+{ code: "tgic icon-add-cart-1" },
+{ code: "tgic icon-add-cart-2" },
 { code: "tgic icon-exit-full-screen" },
 { code: "tgic icon-full-screen" },
 { code: "tgic icon-fire" },
