@@ -6,6 +6,10 @@ var prefix = "tgic ";
 let abc = "icon-";
 // Danh sách icon mới
 var newIcons = [
+  `${abc}more-h`,
+  `${abc}more-v`,
+  `${abc}solid-more-h`,
+  `${abc}solid-more-v`,
   `${abc}best-seller`,
   `${abc}solid-best-seller`,
   `${abc}discount`,
@@ -25,7 +29,6 @@ var newIcons = [
   `${abc}shipping-1`,
   `${abc}solid-shipping-1`,
 ];
-
 
 // read iconData
 fetch("user/iconData-1.txt")
@@ -78,7 +81,7 @@ fetch("user/iconData-1.txt")
   })
   .catch((error) => console.error("Error fetching iconData:", error));
 
-   // Function to fetch and display the file content Icon data
+// Function to fetch and display the file content Icon data
 async function displayFileContent() {
   try {
     const response = await fetch("user/iconData-1.txt");
@@ -90,12 +93,10 @@ async function displayFileContent() {
 
     // Count the occurrences of "ad-tgic"
     // const iconCountMatch = text.match(/ad-mm/g);
-    const iconCountMatch = text.match(new RegExp(`${prefix}`, 'g'));
+    const iconCountMatch = text.match(new RegExp(`${prefix}`, "g"));
     const count = iconCountMatch ? iconCountMatch.length : 0;
     iconCount.textContent = ` (${count})`;
   } catch (error) {
     fileContent.textContent = `Error: ${error.message}`;
   }
 }
-
-
