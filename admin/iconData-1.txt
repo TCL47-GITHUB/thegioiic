@@ -1,4 +1,6 @@
 const iconData = [
+{ code: "ad-tgic adm-shape-square", content: "\e9d8" },
+{ code: "ad-tgic adm-shape-circle", content: "\e971" },
 { code: "ad-tgic adm-exit-full-screen", content: "\e910" },
 { code: "ad-tgic adm-full-screen", content: "\e911" },
 { code: "ad-tgic adm-download", content: "\e90e" },
@@ -165,7 +167,6 @@ const iconData = [
 { code: "ad-tgic adm-solid-save", content: "\e9b3" },
 { code: "ad-tgic adm-send", content: "\e970" },
 { code: "ad-tgic adm-solid-send", content: "\e9b4" },
-{ code: "ad-tgic adm-shape-circle", content: "\e971" },
 { code: "ad-tgic adm-shopping-bag", content: "\e974" },
 { code: "ad-tgic adm-solid-shopping-bag", content: "\e9b7" },
 { code: "ad-tgic adm-solid-shopping-bags", content: "\e9b8" },
