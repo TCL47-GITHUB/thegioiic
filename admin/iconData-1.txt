@@ -1,4 +1,5 @@
 const iconData = [
+{ code: "ad-tgic adm-rohs", content: "\e9d9" },
 { code: "ad-tgic adm-shape-square", content: "\e9d8" },
 { code: "ad-tgic adm-shape-circle", content: "\e971" },
 { code: "ad-tgic adm-exit-full-screen", content: "\e910" },

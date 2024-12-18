@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'font-icon-admin-lkx';
-  src:  url('fonts/font-icon-admin-lkx.eot?s39ejl');
-  src:  url('fonts/font-icon-admin-lkx.eot?s39ejl#iefix') format('embedded-opentype'),
-    url('fonts/font-icon-admin-lkx.ttf?s39ejl') format('truetype'),
-    url('fonts/font-icon-admin-lkx.woff?s39ejl') format('woff'),
-    url('fonts/font-icon-admin-lkx.svg?s39ejl#font-icon-admin-lkx') format('svg');
+  src:  url('fonts/font-icon-admin-lkx.eot?2p9vds');
+  src:  url('fonts/font-icon-admin-lkx.eot?2p9vds#iefix') format('embedded-opentype'),
+    url('fonts/font-icon-admin-lkx.ttf?2p9vds') format('truetype'),
+    url('fonts/font-icon-admin-lkx.woff?2p9vds') format('woff'),
+    url('fonts/font-icon-admin-lkx.svg?2p9vds#font-icon-admin-lkx') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.adm-rohs:before {
+  content: "\e9d9";
+}
 .adm-shape-square:before {
   content: "\e9d8";
 }
