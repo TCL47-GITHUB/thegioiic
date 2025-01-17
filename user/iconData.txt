@@ -1,4 +1,6 @@
 const iconData = [
+{ code: "tgic icon-direction" },
+{ code: "tgic icon-solid-direction" },
 { code: "tgic icon-more-h" },
 { code: "tgic icon-more-v" },
 { code: "tgic icon-solid-more-h" },

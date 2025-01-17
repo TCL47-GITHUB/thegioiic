@@ -40,7 +40,6 @@ var newIcons = [
   `${abc}solid-warehouse`,
   `${abc}blog`,
 ];
-
 // read iconData
 fetch("admin/iconData-1.txt")
   .then((response) => response.text())

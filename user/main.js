@@ -6,6 +6,8 @@ var prefix = "tgic ";
 let abc = "icon-";
 // Danh sách icon mới
 var newIcons = [
+  `${abc}direction"`,
+  `${abc}solid-direction"`,
   `${abc}more-h`,
   `${abc}more-v`,
   `${abc}solid-more-h`,
