@@ -3,7 +3,7 @@ class Header extends HTMLElement {
     this.innerHTML = `
   <div class="bgc1 px-2 py-2 flex gap-2 items-center sticky top-0 clearfix flex-col-reverse xl:flex-row sm:gap-1 sm:px-3 md:gap-2">
   <a class="logo hidden xl:block" href="#!">
-   <i class="ad-tgic adm-logo-linhkienx tgic icon-logo-linhkienx text-[#fff] text-2xl"></i></a>
+   <i class="tgic icon-logo-tgic text-[#fff] text-4xl"></i></a>
   <div class="min-w-80 flex rounded gap-1 items-center search-container bg-white px-4 py-1.5">
   <input type="text" class="" id="searchInput" oninput="searchIconByName(this.value)" placeholder="Tìm Icon...">
   
@@ -13,7 +13,7 @@ class Header extends HTMLElement {
 
   <div class="flex flex-col-reverse w-full xl:w-fit gap-2 sm:flex-row sm:gap-2  items-center">
       <a class="logo hidden sm:block xl:hidden" href="#!">
-        <i class="ad-tgic adm-logo-linhkienx tgic icon-logo-linhkienx text-[#fff] text-2xl"></i>
+        <i class="tgic icon-logo-tgic text-[#fff] text-4xl"></i>
       </a>
       <div class="flex w-full text-nowrap">
   <a href="./admin.html" class="w-full text-sm rounded-r-none hover:scale-105 focus:outline-none flex justify-center px-2 py-1 rounded cursor-pointer hover:bg-sky-700 hover:text-sky-100 bg-sky-100 text-sky-700 border border-r-0 duration-200 ease-in-out border-sky-600 transition">
@@ -38,8 +38,8 @@ class Header extends HTMLElement {
   </select>
   </form>
   <h1 class="mhmm mvm text-sm text-nowrap">
-  <span class="fgc1">Font name:</span> <span id="fontName"></span>
-  <small class="fgc1"><span id="totalIconCount"></span></small>
+ <a href="/data-icons.html" target="_blank" class="fgc1">Font name: <span id="fontName"></span>
+  <small class="fgc1"><span id="totalIconCount"></span></small></a>
   </h1>
   </div>
   </div>
